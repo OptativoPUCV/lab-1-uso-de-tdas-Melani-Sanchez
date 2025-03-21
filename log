@@ -65,3 +65,12 @@ exercises.c:94:11: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0bb7bd6
+Fri 21 Mar 2025 02:57:05 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:94:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+   94 |    Stack* aux = create_stack();
+      |           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+8abda48
