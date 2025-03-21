@@ -1,0 +1,28 @@
+Fri 21 Mar 2025 02:44:07 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:7: error: expected expression before ‘int’
+   47 |       int (*num) = malloc(sizeof(int));
+      |       ^~~
+exercises.c:46:4: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   46 |    for(int i = 1; i <= 10; i++)
+      |    ^~~
+exercises.c:48:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   48 |       *num = i;
+      |       ^
+exercises.c:48:8: error: ‘num’ undeclared (first use in this function)
+   48 |       *num = i;
+      |        ^~~
+exercises.c:48:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:48:14: error: ‘i’ undeclared (first use in this function)
+   48 |       *num = i;
+      |              ^
+exercises.c: In function ‘copia_pila’:
+exercises.c:93:11: error: unused variable ‘aux’ [-Werror=unused-variable]
+   93 |    Stack* aux = create_stack();
+      |           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+3f6cb15
