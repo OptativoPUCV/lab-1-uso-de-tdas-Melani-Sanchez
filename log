@@ -90,3 +90,15 @@ exercises.c:117:8: error: unused variable ‘abrir’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 45bd817
+Sun 23 Mar 2025 12:58:31 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:10: error: ‘balanace’ undeclared (first use in this function); did you mean ‘balance’?
+  123 |          balanace--;
+      |          ^~~~~~~~
+      |          balance
+exercises.c:123:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+974b4a2
