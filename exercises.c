@@ -120,7 +120,8 @@ int parentesisBalanceados(char *cadena) {
          balance++;
       }
       else if(cadena[i] == ')'){
-         balanace--;
+         balanbash test.sh
+            ce--;
          if(balance < 0) return 0;
       }
    }

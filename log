@@ -102,3 +102,16 @@ exercises.c:123:10: error: ‘balanace’ undeclared (first use in this function
 exercises.c:123:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 974b4a2
+Sun 23 Mar 2025 12:59:07 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:10: error: unknown type name ‘balanbash’
+  123 |          balanbash test.sh
+      |          ^~~~~~~~~
+exercises.c:123:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+  123 |          balanbash test.sh
+      |                        ^
+Compilation failed
+1df0df4
