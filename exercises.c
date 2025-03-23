@@ -42,12 +42,14 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   List* L = create_list();
+   List* Lista = create_list();
    for(int i = 1; i <= 10; i++){
       int *num = (int *) malloc(sizeof(int));
+      if (num == NULL) EXIT_FAILURE;
       *num = i;
+      pushBack(Lista, num);
    }
-   return L;
+   return Lista;
 }
 
 /*
@@ -62,7 +64,7 @@ int sumaLista(List *L) {
       suma += *dato;
       dato = (int*)next(L);
    }
-   return 0;
+   return suma;
 }
 
 /*
@@ -80,6 +82,7 @@ void eliminaElementos(List*L, int elem){
       if(*num == elem){
          popCurrent(L);
       }
+      num = (int*)next(L);
    }
 }
 
@@ -120,8 +123,7 @@ int parentesisBalanceados(char *cadena) {
          balance++;
       }
       else if(cadena[i] == ')'){
-         balanbash test.sh
-            ce--;
+         balance--;
          if(balance < 0) return 0;
       }
    }
